@@ -1,0 +1,85 @@
+# Project: zadania
+# Makefile created by Embarcadero Dev-C++ 6.3
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+OBJ      = main.o zad1.o zad2.o zad3.o zad4.o zad5.o zad6.o showOptions.o zad7.o zad8.o zad9.o zad10.o zad11.o zad12.o zad13.o zad14.o zad15.o zad16.o zad17.o zad18.o
+LINKOBJ  = main.o zad1.o zad2.o zad3.o zad4.o zad5.o zad6.o showOptions.o zad7.o zad8.o zad9.o zad10.o zad11.o zad12.o zad13.o zad14.o zad15.o zad16.o zad17.o zad18.o
+LIBS     = -L"D:/Programy/Dev-Cpp/TDM-GCC-64/lib" -L"D:/Programy/Dev-Cpp/TDM-GCC-64/x86_64-w64-mingw32/lib" -static-libgcc
+INCS     = -I"D:/Programy/Dev-Cpp/TDM-GCC-64/include" -I"D:/Programy/Dev-Cpp/TDM-GCC-64/x86_64-w64-mingw32/include" -I"D:/Programy/Dev-Cpp/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/9.2.0/include"
+CXXINCS  = -I"D:/Programy/Dev-Cpp/TDM-GCC-64/include" -I"D:/Programy/Dev-Cpp/TDM-GCC-64/x86_64-w64-mingw32/include" -I"D:/Programy/Dev-Cpp/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/9.2.0/include" -I"D:/Programy/Dev-Cpp/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/9.2.0/include/c++"
+BIN      = zadania.exe
+CXXFLAGS = $(CXXINCS) 
+CFLAGS   = $(INCS) 
+DEL      = D:\Programy\Dev-Cpp\DevCpp.exe INTERNAL_DEL
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${DEL} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CC) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+main.o: main.c
+	$(CC) -c main.c -o main.o $(CFLAGS)
+
+zad1.o: zad1.c
+	$(CC) -c zad1.c -o zad1.o $(CFLAGS)
+
+zad2.o: zad2.c
+	$(CC) -c zad2.c -o zad2.o $(CFLAGS)
+
+zad3.o: zad3.c
+	$(CC) -c zad3.c -o zad3.o $(CFLAGS)
+
+zad4.o: zad4.c
+	$(CC) -c zad4.c -o zad4.o $(CFLAGS)
+
+zad5.o: zad5.c
+	$(CC) -c zad5.c -o zad5.o $(CFLAGS)
+
+zad6.o: zad6.c
+	$(CC) -c zad6.c -o zad6.o $(CFLAGS)
+
+showOptions.o: showOptions.c
+	$(CC) -c showOptions.c -o showOptions.o $(CFLAGS)
+
+zad7.o: zad7.c
+	$(CC) -c zad7.c -o zad7.o $(CFLAGS)
+
+zad8.o: zad8.c
+	$(CC) -c zad8.c -o zad8.o $(CFLAGS)
+
+zad9.o: zad9.c
+	$(CC) -c zad9.c -o zad9.o $(CFLAGS)
+
+zad10.o: zad10.c
+	$(CC) -c zad10.c -o zad10.o $(CFLAGS)
+
+zad11.o: zad11.c
+	$(CC) -c zad11.c -o zad11.o $(CFLAGS)
+
+zad12.o: zad12.c
+	$(CC) -c zad12.c -o zad12.o $(CFLAGS)
+
+zad13.o: zad13.c
+	$(CC) -c zad13.c -o zad13.o $(CFLAGS)
+
+zad14.o: zad14.c
+	$(CC) -c zad14.c -o zad14.o $(CFLAGS)
+
+zad15.o: zad15.c
+	$(CC) -c zad15.c -o zad15.o $(CFLAGS)
+
+zad16.o: zad16.c
+	$(CC) -c zad16.c -o zad16.o $(CFLAGS)
+
+zad17.o: zad17.c
+	$(CC) -c zad17.c -o zad17.o $(CFLAGS)
+
+zad18.o: zad18.c
+	$(CC) -c zad18.c -o zad18.o $(CFLAGS)
