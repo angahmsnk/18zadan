@@ -33,6 +33,5 @@ void zadanie10(){
 		printf("%d element: %d\n", i+1, tab[i]);
 	}
 	
-	printf("Srednia arytmetyczna losowo wygenerowanej tablicy to: %.1f\n\n", srednia);	
-	
+	printf("Srednia arytmetyczna losowo wygenerowanej tablicy to: %.1f\n\n", srednia);
 }

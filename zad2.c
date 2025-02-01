@@ -24,5 +24,4 @@ void zadanie2(){
 	system("cls");
 	
 	printf("Najwieksza liczba z trzech wprowadzonych to: %d\n\n", sprawdzMax(tab, tabLength));
-	
 }

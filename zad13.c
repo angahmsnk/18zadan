@@ -26,7 +26,6 @@ struct maxmin szukaj(int *tab, int n){
 			max_i_min.min = tab[i];
 		}
 	}
-	
 	return max_i_min;
 }
 
@@ -42,9 +41,7 @@ void zadanie13(){
 	
 	printf("Wygenerowana zostala nastepujaca %d elementowa tablica liczb calkowitych: ", tabLength);
 	
-	for(int i = 0; i < tabLength; i++){
-		printf("%d, ", tab[i]);
-	}
+	for(int i = 0; i < tabLength; i++) printf("%d, ", tab[i]);
 	
 	printf("\nNajmniejszy element tej tablicy to: %d\n", max_i_min.min);
 	printf("Najwiekszy element tej tablicy to: %d\n\n", max_i_min.max);

@@ -38,11 +38,14 @@ void zadanie9(){
 	int tabLength = 0;
 	system("cls");
 	printf("Podaj wyrazenie do sprawdzenia (bez polskich znakow): ");
+	
+	// Czyszczenie bufora wejściowego
+    int c;
+    while ((c = getchar()) != '\n' && c != EOF);
+	
 	scanf("%1023[^\n]", line);
 	
-	while(line[tabLength] != '\0'){
-		tabLength++;
-	}
+	while(line[tabLength] != '\0') tabLength++;
 	
 	system("cls");
 	

@@ -38,19 +38,13 @@ void zadanie17(){
     scanf("%255s", filename);
 
     FILE *file = fopen(filename, "r");
-    if (!file) {
-        printf("Nie mozna otworzyc pliku %s\n", filename);
-    }
+    if (!file) printf("Nie mozna otworzyc pliku %s\n", filename);
 
     int n;
     char maxChar = max_znak(file, &n);
 
     fclose(file);
 
-    if (n > 0) {
-        printf("Najczesciej wystepujacy znak: '%c' (wystapil %d razy)\n", maxChar, n);
-    } 
-	else {
-        printf("Plik jest pusty lub nie zawiera zadnych znakow.\n");
-    }
+    if (n > 0) printf("Najczesciej wystepujacy znak: '%c' (wystapil %d razy)\n", maxChar, n);
+	else printf("Plik jest pusty lub nie zawiera zadnych znakow.\n");
 }

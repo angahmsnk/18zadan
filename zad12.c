@@ -15,19 +15,14 @@ int sprawdz(int *tab, int n, int a){
 	int lastIndex = -1;
 	
 	for(int i = 0; i < n; i++){
-		if(tab[i] == a){
-			lastIndex = i;
-		}
+		if(tab[i] == a)	lastIndex = i;
 	}
-	
 	return lastIndex;
 }
 
 void zadanie12(){
 	
-	
 	int option, guess, result;
-	
 	int tabLength = 20;
 	int tab[tabLength];
 	randomArray(tab, tabLength);
@@ -39,12 +34,8 @@ void zadanie12(){
 		
 		result = sprawdz(tab, tabLength, guess);
 		
-		if(result == -1){
-			printf("Podanej liczby nie ma w tablicy.\n");
-		}
-		else{
-			printf("Ostatnie wystapienie podanej liczby ma indeks: %d\n", result);
-		}
+		if(result == -1) printf("Podanej liczby nie ma w tablicy.\n");
+		else printf("Ostatnie wystapienie podanej liczby ma indeks: %d\n", result);
 		
 		printf("Tablica zawierala elementy:\n");
 		for(int i = 0; i < tabLength; i++){
@@ -54,12 +45,5 @@ void zadanie12(){
 		
 		printf("\nChcesz sprobowac jeszcze raz?\n1. Tak\n0. Nie\n");
 		scanf("%d", &option);
-		
 	} while (option != 0);
-	
-	
-	
-	
-	
-	
 }

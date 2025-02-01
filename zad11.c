@@ -11,23 +11,15 @@ void randomArrayWithNegative(int tab[], int n){
 	int i = 0;
 	
 	while(i < n){
-		if(rand()%101 <= 50){
-			tab[i++] = rand()%101;
-		}
-		else {
-			tab[i++] = rand()%101 * (-1);
-		}
+		if (rand()%101 <= 50) tab[i++] = rand()%101;
+		else tab[i++] = rand()%101 * (-1);
 	}
 }
 
 int CopyArray(int *tab, int *tab2, int n){
 	for(int i = 0; i < n; i++){
-		if(tab[i] < 0){
-			tab2[i] = 0;
-		}
-		else {
-			tab2[i] = tab[i];
-		}
+		if(tab[i] < 0) tab2[i] = 0;
+		else tab2[i] = tab[i];
 	}
 }
 
@@ -49,5 +41,4 @@ void zadanie11(){
 	for(int i = 0; i < tabLength; i++){
 		printf("%d element Tablicy 2: %d\n", i+1, tab2[i]);
 	}
-	
 }
